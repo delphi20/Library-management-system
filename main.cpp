@@ -12,7 +12,7 @@ void load_books(){
     string token;
     getline(file, line);
 
-
+    cout<<"test";
     vector<string> tokens;
     size_t pos = 0;
 
