@@ -1,7 +1,7 @@
 void performUserOperations(Library &library, User *user)
 {
+    std::cout << "\n****** Welcome to User Portal ******" << std::endl;
     int choice;
-    std::cout << "User Operations:" << std::endl;
     std::cout << "1. Borrow Book" << std::endl;
     std::cout << "2. Return Book" << std::endl;
     std::cout << "3. Display Book Info" << std::endl;
@@ -71,8 +71,8 @@ void performUserOperations(Library &library, User *user)
 
 void performAdminOperations(Library &library)
 {
+    std::cout << "\n****** Welcome to Admin Portal ******" << std::endl;
     int choice;
-    std::cout << "Admin Operations:" << std::endl;
     std::cout << "1. Add Book" << std::endl;
     std::cout << "2. Remove Book" << std::endl;
     std::cout << "3. Display All Books" << std::endl;

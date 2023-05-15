@@ -9,8 +9,8 @@ using namespace std;
 int main()
 {
     Library library;
+    system("cls");
     library.loadLibraryData(library, "library_data.txt");
-    //system("cls");
     std::string username, password;
     std::cout << "Enter username: ";
     std::cin >> username;
@@ -23,12 +23,11 @@ int main()
         std::cout << "\nLogin successful!" << std::endl;
         if (user->getRole() == "admin")
         {
-            std::cout << "\nWelcome to Admin Portal!!" << std::endl;
+            
             performAdminOperations(library);
         }
         else
         {
-            std::cout << "Welcome to User Portal!!" << std::endl;
             performUserOperations(library, user);
         }
     }

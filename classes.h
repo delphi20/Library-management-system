@@ -1,10 +1,9 @@
 //
-// Created 
+// Created by naims on 14/05/2023.
 //
 
 #ifndef LIBRARY_MANAGEMENT_SYSTEM_CLASSES_H
 #define LIBRARY_MANAGEMENT_SYSTEM_CLASSES_H
-
 
 #include <iostream>
 #include <fstream>
@@ -22,7 +21,7 @@ private:
 
 public:
     User(const std::string &u, const std::string &p, const std::string &r)
-            : username(u), password(p), role(r) {}
+        : username(u), password(p), role(r) {}
 
     const std::string &getUsername() const { return username; }
     const std::string &getPassword() const { return password; }
@@ -38,7 +37,7 @@ private:
 
 public:
     Book(const std::string &t, const std::string &a)
-            : title(t), author(a), isAvailable(true) {}
+        : title(t), author(a), isAvailable(true) {}
 
     const std::string &getTitle() const { return title; }
     const std::string &getAuthor() const { return author; }
@@ -94,6 +93,10 @@ public:
             std::cout << user->getUsername() << " has borrowed the book: " << book->getTitle() << std::endl;
             book->setAvailability(false);
         }
+        else if (user != nullptr && book != nullptr && !book->getAvailability())
+        {
+            std::cout << "Book not avail";
+        }
     }
 
     void returnBook(User *user, Book *book)
@@ -128,10 +131,10 @@ public:
         }
         else
         {
-            std::cout << "Library Books: " << std::endl;
+            std::cout << "******* Library Books ********* " << std::endl;
             for (Book *book : books)
             {
-                std::cout << "Title: " << book->getTitle() << ", Author: " << book->getAuthor() << ", Availability: " << book->getAvailability();
+                std::cout << "Title: " << book->getTitle() << "  , Author: " << book->getAuthor() << "  , Availability: " << book->getAvailability() << std::endl;
             }
         }
     }
@@ -180,7 +183,6 @@ public:
                 if (type == "User")
                 {
                     std::string username, password, role;
-
                     std::getline(ss, username, ',');
                     std::getline(ss, password, ',');
                     std::getline(ss, role, ',');
@@ -199,7 +201,7 @@ public:
             }
 
             file.close();
-            std::cout << "Library data loaded successfully." << std::endl;
+            std::cout << "****** Welcome to the portal ********" << std::endl;
         }
         else
         {
@@ -207,10 +209,9 @@ public:
         }
     }
 
-    void removeBook(Book *book){
+    void removeBook(Book *book)
+    {
         books.erase(std::remove(books.begin(), books.end(), book), books.end());
-
     }
 };
-
 #endif

@@ -1,1 +1,7 @@
 User,naim,naim123,admin
+User,qasim,qasim456,admin
+User,ali,ali123,user
+User,asad,asad102,user
+Book,hello,world,1
+Book,bby,shark,1
+Book,oop c++,dietel,1
