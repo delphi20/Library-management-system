@@ -1,6 +1,22 @@
 # ninja log v5
-4	773	7057601254444393	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
-774	892	7057601255608119	Library_management_system.exe	c7e97221387819ef
-1	237	7057601332182736	build.ninja	64ea9617d2b3520e
-3	453	7057601631594241	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
-453	554	7057601632559730	Library_management_system.exe	c7e97221387819ef
+7	1391	7057805848776091	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
+2	541	7057806234823143	build.ninja	64ea9617d2b3520e
+1392	1649	7057805851306528	Library_management_system.exe	c7e97221387819ef
+7	1427	7057816728618671	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
+1429	1665	7057816730932173	Library_management_system.exe	c7e97221387819ef
+7	1495	7057946803467352	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
+1496	1798	7057946806434047	Library_management_system.exe	c7e97221387819ef
+7	1679	7057947873452886	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
+1680	1923	7057947875836491	Library_management_system.exe	c7e97221387819ef
+7	1486	7057948908022608	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
+1487	1727	7057948910408748	Library_management_system.exe	c7e97221387819ef
+8	1489	7057949475458229	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
+1490	1749	7057949478005698	Library_management_system.exe	c7e97221387819ef
+6	1456	7057949792180270	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
+1457	1687	7057949794387878	Library_management_system.exe	c7e97221387819ef
+10	1485	7057954394386699	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
+1486	1774	7057954397103229	Library_management_system.exe	c7e97221387819ef
+8	1551	7057955306720563	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
+1552	1828	7057955309406990	Library_management_system.exe	c7e97221387819ef
+7	1327	7057957963321335	CMakeFiles/Library_management_system.dir/main.cpp.obj	921168d2f6e616c0
+1328	1585	7057957965808669	Library_management_system.exe	c7e97221387819ef
