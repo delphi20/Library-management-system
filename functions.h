@@ -1,17 +1,3 @@
-//
-// Created by naims on 14/05/2023.
-//
-
-#ifndef LIBRARY_MANAGEMENT_SYSTEM_FUNCTIONS_H
-#define LIBRARY_MANAGEMENT_SYSTEM_FUNCTIONS_H
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include<sstream>
-#include<algorithm>
-#include <string>
-
 void performUserOperations(Library &library, User *user)
 {
     int choice;
@@ -86,10 +72,7 @@ void performUserOperations(Library &library, User *user)
 void performAdminOperations(Library &library)
 {
     int choice;
-    std::stringstream ss;
-    std::string in, str, un, ps, rl;
     std::cout << "Admin Operations:" << std::endl;
-    std::cout<<"0. Add user"<<std::endl;
     std::cout << "1. Add Book" << std::endl;
     std::cout << "2. Remove Book" << std::endl;
     std::cout << "3. Display All Books" << std::endl;
@@ -99,15 +82,6 @@ void performAdminOperations(Library &library)
 
     switch (choice)
     {
-        case 0:
-            std::cout<<"Enter username, password and role seperated by comma(no space): ";std::cin>>str;
-            ss<<str;
-            std::getline(ss, un, ',');
-            std::getline(ss, ps, ',');
-            std::getline(ss, rl, ',');
-            library.addUser(library.createUser(un, ps, rl));
-            break;
-
         case 1:
         {
             std::string title, author;
@@ -158,4 +132,3 @@ void performAdminOperations(Library &library)
 
     performAdminOperations(library);
 }
-#endif //LIBRARY_MANAGEMENT_SYSTEM_FUNCTIONS_H

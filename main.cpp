@@ -8,12 +8,9 @@ using namespace std;
 
 int main()
 {
-    string line;
     Library library;
     library.loadLibraryData(library, "library_data.txt");
-    fstream file("library_data.txt");
-    getline(file, line);
-    cout<<line;
+    //system("cls");
     std::string username, password;
     std::cout << "Enter username: ";
     std::cin >> username;
@@ -23,21 +20,20 @@ int main()
 
     if (user != nullptr && user->getPassword() == password)
     {
-        std::cout << "Login successful!" << std::endl;
+        std::cout << "\nLogin successful!" << std::endl;
         if (user->getRole() == "admin")
         {
-            std::cout << "Welcome admin!" << std::endl;
+            std::cout << "\nWelcome to Admin Portal!!" << std::endl;
             performAdminOperations(library);
         }
         else
         {
-            std::cout << "Welcome user!" << std::endl;
+            std::cout << "Welcome to User Portal!!" << std::endl;
             performUserOperations(library, user);
         }
     }
     else
     {
-        cout<<user;
         std::cout << "Login failed. Please try again." << std::endl;
     }
 
