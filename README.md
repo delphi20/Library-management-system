@@ -1,3 +1,10 @@
 # Library-management-system
 
-<table><th>Table Of Contents</th></table>
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
